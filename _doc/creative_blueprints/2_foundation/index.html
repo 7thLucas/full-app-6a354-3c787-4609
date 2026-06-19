@@ -1,0 +1,83 @@
+<style>
+.mode-landscape .sl-body { flex-direction: row; }
+.mode-portrait .sl-body { flex-direction: column; }
+.mode-landscape .sl-half { width: 50%; }
+.mode-portrait .sl-half { width: 100%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <span class="text-xs font-bold tracking-widest uppercase text-indigo-500">Why It Exists</span>
+      <h2 class="mt-2 text-3xl font-black text-slate-900">Problem &amp; Solution</h2>
+    </div>
+
+    <!-- Body: Problem | Solution -->
+    <div class="sl-body flex flex-1 gap-6">
+
+      <!-- Problem -->
+      <div class="sl-half flex flex-col">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="w-6 h-6 rounded-full bg-rose-100 flex items-center justify-center text-rose-500 text-xs font-bold">!</span>
+          <span class="text-xs font-bold text-rose-500 uppercase tracking-widest">The Problem</span>
+        </div>
+        <div class="bg-rose-50 rounded-2xl p-6 flex-1 flex flex-col justify-between">
+          <p class="text-lg font-semibold text-slate-800 leading-snug mb-4">
+            Most web games demand too much before you can play.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2">
+              <span class="text-rose-400 font-bold mt-0.5">×</span>
+              <span class="text-sm text-slate-600">Create an account before playing</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-rose-400 font-bold mt-0.5">×</span>
+              <span class="text-sm text-slate-600">Long tutorials and onboarding flows</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-rose-400 font-bold mt-0.5">×</span>
+              <span class="text-sm text-slate-600">Heavy apps that take time to load</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-rose-400 font-bold mt-0.5">×</span>
+              <span class="text-sm text-slate-600">Ads and distractions interrupting play</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Solution -->
+      <div class="sl-half flex flex-col">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 text-xs font-bold">✓</span>
+          <span class="text-xs font-bold text-indigo-600 uppercase tracking-widest">The Solution</span>
+        </div>
+        <div class="bg-indigo-50 rounded-2xl p-6 flex-1 flex flex-col justify-between">
+          <p class="text-lg font-semibold text-slate-800 leading-snug mb-4">
+            Open the app and start playing in seconds — nothing in between.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2">
+              <span class="text-indigo-500 font-bold mt-0.5">✓</span>
+              <span class="text-sm text-slate-600">No login, no signup — instant access</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-indigo-500 font-bold mt-0.5">✓</span>
+              <span class="text-sm text-slate-600">Classic rules, intuitive interface</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-indigo-500 font-bold mt-0.5">✓</span>
+              <span class="text-sm text-slate-600">Lightweight — loads under a second</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-indigo-500 font-bold mt-0.5">✓</span>
+              <span class="text-sm text-slate-600">Clean, ad-free, distraction-free play</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
