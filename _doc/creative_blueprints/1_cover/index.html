@@ -1,0 +1,54 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-content { width: 58%; }
+.mode-landscape .sl-visual { width: 42%; }
+.mode-portrait .sl-content { width: 100%; flex: 1; }
+.mode-portrait .sl-visual { width: 100%; height: 40%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: content -->
+    <div class="sl-content flex flex-col justify-between p-12">
+      <div>
+        <span class="inline-block text-xs font-bold tracking-widest uppercase text-indigo-600 bg-indigo-50 px-3 py-1.5 rounded-full">Browser Game</span>
+        <h1 class="mt-8 text-5xl font-black text-slate-900 leading-none tracking-tight">
+          The Classic<br/>Game.<br/>
+          <span class="text-indigo-500">Perfectly Simple.</span>
+        </h1>
+        <p class="mt-6 text-base text-slate-500 leading-relaxed max-w-xs">
+          Two players. One board. Zero friction.<br/>
+          Open and play — no account, no tutorial, no wait.
+        </p>
+      </div>
+      <div>
+        <div class="flex items-center gap-6 mb-5">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-indigo-400 rounded-full"></span>
+            <span class="text-sm text-slate-400 font-medium">Instant play</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-indigo-400 rounded-full"></span>
+            <span class="text-sm text-slate-400 font-medium">Local multiplayer</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-indigo-400 rounded-full"></span>
+            <span class="text-sm text-slate-400 font-medium">No signup</span>
+          </div>
+        </div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: visual -->
+    <div class="sl-visual overflow-hidden bg-indigo-50 flex items-center justify-center">
+      <img
+        src="http://localhost:8001/common/image-generation?prompt=minimalist%20tic%20tac%20toe%20board%20with%20X%20and%20O%20pieces%20indigo%20blue%20and%20white%20flat%20geometric%20design%20soft%20background%20clean%20elegant"
+        alt="Tic Tac Toe Board"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+  </div>
+</section>
