@@ -1,0 +1,77 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <span class="text-xs font-bold tracking-widest uppercase text-indigo-500">The Number That Matters</span>
+      <h2 class="mt-2 text-3xl font-black text-slate-900">North Star Metric</h2>
+      <p class="text-xs text-slate-400 mt-1 italic">Projected impact — based on your inputs</p>
+    </div>
+
+    <!-- Body: two columns -->
+    <div class="grid grid-cols-2 gap-5 flex-1">
+
+      <!-- Left: operation + formula -->
+      <div class="flex flex-col gap-4">
+
+        <!-- Operation definition -->
+        <div class="bg-indigo-50 rounded-2xl p-5">
+          <p class="text-xs font-bold text-indigo-500 uppercase tracking-widest mb-2">Verified Operation</p>
+          <p class="text-xl font-bold text-slate-900">Game Completed</p>
+          <p class="text-xs text-slate-500 mt-1 leading-relaxed">A full game played to a win or draw outcome by two real players in the app.</p>
+        </div>
+
+        <!-- WVO formula -->
+        <div class="bg-slate-50 rounded-2xl p-5 flex-1 flex flex-col justify-between">
+          <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Weekly Formula</p>
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-xs text-slate-600">Active users / week</span>
+              <span class="text-xs font-semibold bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full whitespace-nowrap">Assumption — adjust: 10</span>
+            </div>
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-xs text-slate-600">Games / user / week</span>
+              <span class="text-xs font-semibold bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full whitespace-nowrap">Assumption — adjust: 5</span>
+            </div>
+          </div>
+          <div class="border-t border-slate-200 pt-3 mb-3">
+            <p class="text-xs text-slate-500">10 users × 5 games = <span class="font-bold text-indigo-700">50 games / week</span></p>
+          </div>
+          <div class="bg-indigo-600 rounded-xl p-3 text-center">
+            <p class="text-3xl font-black text-white leading-none">50</p>
+            <p class="text-xs text-indigo-200 mt-1">Verified Operations / Week</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: value + annual total -->
+      <div class="flex flex-col gap-4">
+
+        <!-- Value per operation -->
+        <div class="bg-slate-50 rounded-2xl p-5">
+          <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Value per Operation</p>
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="text-xs text-slate-600">Avg game duration</span>
+            <span class="text-xs font-semibold bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full whitespace-nowrap">Assumption — adjust: 3 min</span>
+          </div>
+          <div class="border-t border-slate-200 pt-3">
+            <p class="text-xs text-slate-500">50 games × 3 min = <span class="font-bold text-slate-800">150 min engagement / week</span></p>
+          </div>
+        </div>
+
+        <!-- Annual total -->
+        <div class="bg-indigo-600 rounded-2xl p-6 flex-1 flex flex-col justify-between">
+          <p class="text-xs font-bold text-indigo-200 uppercase tracking-widest">Projected Annual Engagement</p>
+          <div>
+            <p class="text-5xl font-black text-white leading-none mt-2">130 hrs</p>
+            <p class="text-xs text-indigo-200 mt-2">150 min/wk × 52 weeks ÷ 60 = 130 hours/year</p>
+          </div>
+          <p class="text-xs text-indigo-300 italic">Projections from your inputs — update assumption chips to match real usage.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
